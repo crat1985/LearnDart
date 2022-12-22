@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_dart_mobile_app/screens/guest/home.dart';
-import 'package:learn_dart_mobile_app/screens/guest/intro.dart';
+import 'package:learn_dart_mobile_app/screens/guest/tutorials/hello_world.dart';
+import 'package:learn_dart_mobile_app/screens/guest/tutorials/intro.dart';
 
 class ViewsManager extends StatefulWidget {
   const ViewsManager({super.key});
@@ -21,9 +22,12 @@ class _ViewsManagerState extends State<ViewsManager> {
         Home(
           onChangedStep: (index) => setState(() => _index = index),
         ),
-        Intro(
+        IntroTuto(
           onChangedStep: (index) => setState(() => _index = index),
-        )
+        ),
+        HelloWorldTuto(
+          onChangedStep: (index) => setState(() => _index = index),
+        ),
       ],
     );
   }

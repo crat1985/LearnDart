@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Intro extends StatefulWidget {
+class IntroTuto extends StatefulWidget {
   final Function(int) onChangedStep;
-  const Intro({super.key, required this.onChangedStep});
+  const IntroTuto({super.key, required this.onChangedStep});
 
   @override
-  State<Intro> createState() => _IntroState();
+  State<IntroTuto> createState() => _IntroTutoState();
 }
 
-class _IntroState extends State<Intro> {
+class _IntroTutoState extends State<IntroTuto> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -39,6 +39,7 @@ class _IntroState extends State<Intro> {
                   text: "I. Présentation de Dart\n",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 14,
                   ),
                   children: [
                     TextSpan(
@@ -51,7 +52,7 @@ class _IntroState extends State<Intro> {
                     TextSpan(text: "II. Similarités avec d'autres langages\n"),
                     TextSpan(
                       text:
-                          "C'est également un langage orienté objet comme C++ ou Java.\nSa syntaxe est semblable à celle de Java ou JavaScript.\n\n",
+                          "C'est également un langage orienté objet comme C++ ou Java.\nSa syntaxe est semblable à celle de Java ou JavaScript. Elle peut également être comparée à celle de GoLang (aussi créé par Google).\n\n",
                       style: TextStyle(
                         fontWeight: FontWeight.normal,
                       ),

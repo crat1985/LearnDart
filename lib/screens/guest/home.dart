@@ -36,8 +36,13 @@ class _HomeState extends State<Home> {
                   textAlign: TextAlign.center,
                 ),
                 ElevatedButton(
-                    onPressed: () => widget.onChangedStep(1),
-                    child: const Text("Introduction"))
+                  onPressed: () => widget.onChangedStep(1),
+                  child: const Text("Introduction"),
+                ),
+                ElevatedButton(
+                  onPressed: () => widget.onChangedStep(2),
+                  child: const Text("Hello World"),
+                ),
               ],
             ),
           ),
