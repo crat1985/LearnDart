@@ -22,31 +22,37 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        body: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                const Text(
-                  "Liste des tutoriels",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-                ElevatedButton(
-                  onPressed: () => widget.onChangedStep(1),
-                  child: const Text("Introduction"),
-                ),
-                ElevatedButton(
-                  onPressed: () => widget.onChangedStep(2),
-                  child: const Text("Hello World"),
-                ),
-              ],
-            ),
+        body: //Center(
+            /*child:*/ SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                "Liste des tutoriels",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () => widget.onChangedStep(1),
+                child: const Text("Introduction"),
+              ),
+              ElevatedButton(
+                onPressed: () => widget.onChangedStep(2),
+                child: const Text("Hello World"),
+              ),
+            ],
           ),
         ),
+        //),
       ),
     );
   }
